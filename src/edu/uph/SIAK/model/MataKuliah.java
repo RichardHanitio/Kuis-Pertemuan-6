@@ -1,27 +1,52 @@
 package edu.uph.SIAK.model;
 
-public class MataKuliah {
-    String nama;
+/*
+    Nama : Richard Hanitio
+    NIM : 03082200014
+*/
 
+public class MataKuliah {
+    //properti
+    private String kodeMataKuliah;
+    private String namaMataKuliah;
+    private int SKS;
+
+
+    //constructor
     public MataKuliah() {
     }
 
-    public MataKuliah(String nama) {
-        this.nama = nama;
+
+    public MataKuliah(String kodeMataKuliah, String namaMataKuliah, int SKS) {
+        this.kodeMataKuliah = kodeMataKuliah;
+        this.namaMataKuliah = namaMataKuliah;
+        this.SKS = SKS;
+    }
+    
+
+    //getter setter
+    public String getKodeMataKuliah() {
+        return this.kodeMataKuliah;
     }
 
-    public String getNama() {
-        return this.nama;
+    public void setKodeMataKuliah(String kodeMataKuliah) {
+        this.kodeMataKuliah = kodeMataKuliah;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public String getNamaMataKuliah() {
+        return this.namaMataKuliah;
     }
 
+    public void setNamaMataKuliah(String namaMataKuliah) {
+        this.namaMataKuliah = namaMataKuliah;
+    }
 
-    @Override
-    public String toString() {
-        return nama;
+    public int getSKS() {
+        return this.SKS;
+    }
+
+    public void setSKS(int SKS) {
+        this.SKS = SKS;
     }
 
 }
